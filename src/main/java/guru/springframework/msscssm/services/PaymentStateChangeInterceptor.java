@@ -19,7 +19,7 @@ import java.util.Optional;
  */
 @RequiredArgsConstructor
 @Component
-public class PaymentStateChangeListener extends StateMachineInterceptorAdapter<PaymentState, PaymentEvent> {
+public class PaymentStateChangeInterceptor extends StateMachineInterceptorAdapter<PaymentState, PaymentEvent> {
 
     private final PaymentRepository paymentRepository;
 
